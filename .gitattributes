@@ -1,0 +1,23 @@
+# 统一换行：仓库内用 LF，检出时按平台/文件类型转换
+* text=auto eol=lf
+
+# Windows 脚本检出为 CRLF（cmd 更稳），POSIX 脚本必须是 LF
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.ps1     text eol=crlf
+*.sh      text eol=lf
+*.command text eol=lf
+
+# 二进制，禁止任何转换
+*.xlsx binary
+*.xls  binary
+*.gz   binary
+*.pdf  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.ico  binary
+
+# 让 GitHub 语言统计更准确
+*.md   linguist-documentation
+web/index.html linguist-vendored=false

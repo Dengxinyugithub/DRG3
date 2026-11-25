@@ -1,0 +1,4 @@
+
+
+patient_id,age,age_unit,gender,birth_weight_g,primary_diagnosis_code,primary_operation_code
+A1,30,years,M,,K35.800x001,47.0901
